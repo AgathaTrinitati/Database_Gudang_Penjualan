@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gudang & Penjualan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gudang & Penjualan</h1>
+
+    <section>
+        <h2>Tambah Barang</h2>
+        <input type="text" id="nama" placeholder="Nama Barang">
+        <input type="number" id="stok" placeholder="Stok">
+        <input type="number" id="harga" placeholder="Harga">
+        <button onclick="tambahBarang()">Simpan</button>
+    </section>
+
+    <section>
+        <h2>Barang di Gudang</h2>
+        <table id="tabel-barang">
+            <thead>
+                <tr><th>Nama</th><th>Stok</th><th>Harga</th><th>Aksi</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Riwayat Penjualan</h2>
+        <table id="tabel-penjualan">
+            <thead>
+                <tr><th>Barang</th><th>Jumlah</th><th>Total</th><th>Tanggal</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
